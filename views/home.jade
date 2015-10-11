@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title Chat
+        script(src='/libs/jquery.min.js')
+        script(src="/libs/socket.io.js")
+        script(src="script.js")
+    body
+        div.container
+            header
+                h1 A Chat application with Node.js and Socket.io
+            
+            
+            div#username_panel
+                input(type='text')
+                button Set UserName
+            div#message_control_panel
+                div#chatEntries
+                div#message_panel
+                    input(type='text')
+                    button Send
