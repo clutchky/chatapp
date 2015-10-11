@@ -60,7 +60,7 @@ var ClientMessageProcessor = {
     },
     pushMessageToView: function(username, message){
         $('#message_panel input[type="text"]').prop('value','');
-        $('#chatEntries').append('<div class="message"><p>'+username+' : '+message+'</p></div>');
+        $('#chatEntries').append('<div class="message message_me"><p>'+username+' : '+message+'</p></div>');
     }
 }
 
